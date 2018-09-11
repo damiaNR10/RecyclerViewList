@@ -37,13 +37,13 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
         holder.background_img.setImageResource(mData.get(position).getBackground());
         holder.profile_photo.setImageResource(mData.get(position).getProfilePhoto());
         holder.tv_title.setText(mData.get(position).getProfileName());
-        holder.tv_nmFollowers.setText(mData.get(position).getNbFollowers() + "Followers");
+        holder.tv_nmFollowers.setText(mData.get(position).getNbFollowers() + " Followers");
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mData.size();
     }
 }
 
